@@ -1,0 +1,66 @@
+:root {
+    --vermelho:#E50914;
+    --preto:#141414;
+    --branco: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos Base*/
+
+body{
+    background-color:var(--preto);
+    color: var(--branco);
+    font-family: 'Helvetica Neue',Helvetica, Arial, Sans-serif;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header .navbarlink{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header .navbarlink:hover{
+    color: var(--branco);
+}
+
+/*Jogo Principal*/
+
+.jogo-principal{
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+.jogo-principal > .bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.jogo-principal > .bg-video > video{
+    width: 100%;
+}
