@@ -5,38 +5,188 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
-    
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
     <title>GamerFlix</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h2 class="logo">GamerFlix</h2>
-            <nav class="navbar">
-                <a href="#" class="navbarlink">Inicio</a>
-                <a href="#" class="navbarlink">Futebol</a>
-                <a href="#" class="navbarlink">Carros</a>
-                <a href="#"class="navbarlink">RPG</a>
-            </nav>
-        </div>
-    </header>
-    <main>
+    <div class="principal">
         <div class="jogo-principal">
-            <div class="bg-video">
-                <video autoplay loop poster="img/fifa21poster.jpeg">
-                <source src="video/FIFA21.webm" type="video/webm">
-                
-                </video>
+            <div class="bg-video" id="bg-video">
                 
             </div>
-            <div class="container">
+            <div class="div-header">
+                <header>
+                    <div class="container">
+                        <div class="container-navbar">
+                            <h2 class="logo">GamerFlix</h2>
+                            <nav class="navbar">
+                                <a href="#" class="navbarlink">Inicio</a>
+                                <a href="#" class="navbarlink">Esportes</a>
+                                <a href="#" class="navbarlink">Veiculos</a>
+                                <a href="#"class="navbarlink">RPG</a>
+                            </nav>
+                        </div>    
+                    </div>
+                </header>
+            </div>
+            <div class="descricaopr">
                 <h3 class="titulo">FIFA 2021</h3>
-                <p class="descricao">Vença como Um no EA SPORTS FIFA 21, com tecnologia
-                     Frostbite. Seja nas ruas ou no estádio, o FIFA 21 tem mais maneiras 
-                     de jogar do que nunca – 
-                    incluindo a UEFA Champions League e a CONMEBOL Libertadores.</p>
+                <p class="descricao">
+                    Vença como Um no EA SPORTS FIFA 21, com tecnologia
+                    Frostbite. Seja nas ruas ou no estádio, o FIFA 21 tem mais maneiras 
+                    de jogar do que nunca – 
+                    incluindo a UEFA Champions League e a CONMEBOL Libertadores.
+                </p>    
+            </div>
+            <div class="botaoprincipal">
+                <button type="button" id="botaojogarfifa21" class="botaojogarfifa21" onclick="jogar('fifa21')">
+                    <i class="fas fa-gamepad"></i>
+                    Bora Jogar
+                </button>
+                <button type="button" class="botaorequisitos" onclick="req('fifa21')">
+                    <i class="fas fa-cog"></i>
+                    requisitos do sistema
+                </button>
+                <button type="button"  class="replaybotao" onclick="replay('bg-video')">
+                    <i class="far fa-play-circle"></i>
+                </button>
             </div>
         </div>
-    </main>
+        <main>
+            
+            <div class="outros-jogos">
+               
+                <div class="container">
+                   
+                    <div class="carros">
+                        
+                        <div class="owl-carousel owl-theme">
+                            
+                            <div class="item">
+                                <a href="https://www.microsoft.com/pt-br/p/forza-horizon-4/9pnqkhfld2wq#activetab=pivot:overviewtab">
+                                <img src="img/carros/forza horaizon 4.png" alt="Forza Horaizon 4">
+                                </a>   
+                            </div>
+                            <div class="item">
+                                <a href="https://www.microsoft.com/pt-br/p/f1-2020/9p5frhdpntc6?activetab=pivot:overviewtab">
+                                <img src="img/carros/f1720.jpg" alt="Formula 1 2020">    
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://www.origin.com/bra/pt-br/store/need-for-speed/need-for-speed-payback">
+                                <img src="img/carros/needpayback.jpg" alt="Need For Speed Payback">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://www.microsoft.com/pt-br/p/dirt-5/9pjgm0t0827v#activetab=pivot:overviewtab">
+                                <img src="img/carros/dirt51.jpg" alt="Dirt 5">
+                                </a>
+                            </div>
+                                
+                            <div class="item">
+                                <a href="https://store.ubi.com/ofertas/game?lang=pt_BR&pid=598c6a3e0c8ee469268b4568&dwvar_598c6a3e0c8ee469268b4568_Platform=pcdl&edition=Standard%20Edition&source=detail">
+                                <img src="img/carros/thecrew123.jpg" alt="The Crew 3">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                <img src="img/carros/gt12.jpg" alt="Gran Turism 6">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://store.playstation.com/pt-br/product/UP9000-CUSA03220_00-GTSPORTS00000000">
+                                <img src="img/carros/projectcaars.jpeg" alt="Project cars">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/">
+                                <img src="img/carros/ets.jpg" alt="Euro Truck simulater">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://play.google.com/store/apps/details?id=com.PixelXYZ.BusSimulation2019&hl=pt_BR&gl=US">
+                                <img src="img/carros/luxurybus.jpeg" alt="Luxury Bus simulater">
+                                </a>
+                            </div>
+                        
+                        </div>
+                   
+                    </div>
+
+                    <div class="esportes">
+
+                        <div class="owl-carousel owl-theme">
+                            
+                            <div class="item">
+                                <a href="https://www.konami.com/wepes/2021/us/pt-br/ps4/page/order">
+                                <img src="img/esportes/pes720.jpg" alt="Pes 2021"> 
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://www.ea.com/pt-br/games/fifa/fifa-21">
+                                <img src="img/esportes/fifa-21720.jpg" alt="fifa21">    
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://play.google.com/store/apps/details?id=com.dts.freefireth&hl=pt_BR&gl=US">
+                                <img src="img/esportes/freefire720.jpg" alt="Free Fire">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://buracoon.com.br/game/">
+                                <img src="img/esportes/buraco.jpeg" alt="buraco o jogo">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://play.google.com/store/apps/details?id=games.onebutton.golfbattle&hl=pt_BR&gl=US">
+                                <img src="img/esportes/golf720.jpg" alt="golf">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://play.google.com/store/apps/details?id=uk.co.yakuto.TableTennisTouch&hl=pt_BR&gl=US">
+                                <img src="img/esportes/pingpong720.jpeg" alt="Ping Pong">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://www.microsoft.com/pt-br/p/motogp-20/9pjgnfwr6mhl?activetab=pivot:overviewtab">
+                                <img src="img/esportes/motogp720.jpg" alt="Moto Gp">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://www.jogatina.com/poker-online.html">
+                                <img src="img/esportes/poker720.jpg" alt="Poker">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://www.jogos360.com.br/tennis.html">
+                                <img src="img/esportes/tennis720.jpg" alt="tennis">
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=portuguese">
+                                <img src="img/esportes/cs720.jpg" alt="CS GO">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="mmorpg-e-outros">
+
+                    </div>
+
+                </div>
+            
+            </div>
+
+        </main>
+    </div>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.js"></script>
+    <script src="https://kit.fontawesome.com/aa8c41685b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
 </body>
 </html>
