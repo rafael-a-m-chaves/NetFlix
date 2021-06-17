@@ -1,0 +1,82 @@
+.botaocarrocel{
+    background-color: rgba(255,255,255,.50);
+    color: black;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 23px;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.botaocarrocel:hover{
+    background-color: rgba(0,0,0,.50);
+    color: white;
+}
+
+.divcarrosel1-1{
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(../img/1/forzahoraizon4.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 430px;
+    display: flex;
+    overflow: hidden;  
+}
+
+.divcarrosel1-2{
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(../img/1/f1720.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 430px;
+    display: flex;
+    overflow: hidden;  
+}
+
+.divcarrosel1-3{
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(../img/1/needpayback.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 430px;
+    display: flex;
+    overflow: hidden;  
+}
+
+.divcarrosel1-4{
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(../img/1/dirt51.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 430px;
+    display: flex;
+    overflow: hidden;  
+}
+
+.vd-carrocel{
+    display: none;
+    z-index: -1;
+    margin-bottom: 86%;
+}
+
+
+.vd-pl-cr{
+    width: 100%;
+    height: 100%;
+}
+
+.divcarrosel{
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 430px;
+    display: flex;
+    overflow: hidden;  
+}
